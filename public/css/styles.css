@@ -36,6 +36,7 @@ article {
 .buscador {
     width: 180px;
     font-size: 12px;
+    position: relative;
 }
 
 .search-bar {
@@ -43,7 +44,7 @@ article {
     font-size: 10px;
     padding: 3px 3px 3px 3px;
     border-radius: 5px;
-    width: 170px;
+    width: 96px;
     height: 15px;
 
 }
@@ -63,8 +64,13 @@ article {
 .manito {
     text-align: center;
     font-size: 12px;
-    display: inline-flex;
+    display: none;
+}
 
+.manito-cel {
+    position: absolute;
+    top: 58px;
+    font-size: 12px;
 }
 
 .navbar {
@@ -196,8 +202,8 @@ footer {
 .burger-menu {
     padding: 7px;
     margin-left: 160px;
-    margin-top: 31px;
-    margin-bottom: 15px;
+    margin-top: 20px;
+    margin-bottom: 17px;
     color: #ffffff;
     background-color: #1259c3;
     border-radius: 15%;
@@ -352,6 +358,10 @@ footer {
 
     .product-wrapper:hover .descripcion-inline {
         opacity: 1;
+    }
+
+    .manito-cel {
+        display: none;
     }
 
 }
@@ -521,28 +531,32 @@ footer {
         left: 6px;
     }
 
-    .i-envia  {
+    .i-envia {
         transition: transform 0.5s ease;
     }
 
     .i-envia:hover {
-                    color: red;
-    } 
+        color: red;
+    }
 
-    .i-paga  {
+    .i-paga {
         transition: transform 0.5s ease;
     }
 
     .i-paga:hover {
-                    color: red;
-    } 
+        color: red;
+    }
 
-    .i-seguridad  {
+    .i-seguridad {
         transition: transform 0.5s ease;
     }
 
     .i-seguridad:hover {
-                    color: red;
-    } 
+        color: red;
+    }
 
+
+    .manito-cel {
+        display: none;
+    }
 }

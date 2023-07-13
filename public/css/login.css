@@ -26,29 +26,47 @@ header {
     justify-content: space-around;
     align-items: center;
     padding: 10px;
+    position: relative;
 }
 
 .buscador {
     width: 180px;
     font-size: 12px;
-   
+    position: relative;
+}
+
+.search-bar {
+    border: 0px solid white;
+    font-size: 10px;
+    padding: 3px 3px 3px 3px;
+    border-radius: 5px;
+    width: 96px;
+    height: 15px;
+
 }
 
 .lupita {
     margin-left: 1px;
     background-color: #ffffff;
     display: inline-block;
-    padding: 1px 1px 1px 1px;
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 5px
+    padding: 2px 2px 2px 2px;
+    border: 0px solid rgb(255, 255, 255);
+    border-radius: 5px;
+
+
 }
 
 
 .manito {
     text-align: center;
     font-size: 12px;
-    display: inline-flex;
-    
+    display: none;
+}
+
+.manito-cel {
+    position: absolute;
+    top: 58px;
+    font-size: 12px;
 }
 
 .navbar {
@@ -160,8 +178,8 @@ footer {
 .burger-menu {
     padding: 7px;
     margin-left: 160px;
-    margin-top: 10px;
-    margin-bottom: 15px;
+    margin-top: 20px;
+    margin-bottom: 17px;
     color: #ffffff;
     background-color: #1259c3;
     border-radius: 15%;
@@ -239,7 +257,9 @@ footer {
         display: none;
     }
 
-    
+    .manito-cel {
+        display: none;
+    }
 }
 
 
@@ -360,4 +380,7 @@ footer {
     .i-seguridad:hover {
                     color: red;
     } 
+    .manito-cel {
+        display: none;
+    }
 }
