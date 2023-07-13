@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+    <script src="../app.js"></script>
+    <link rel="stylesheet" href="/css/register.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <main>
+        <header>
+            <form action="/register" method="POST">
+                <input class="name" type="text" name="nya" id="nya" placeholder="Nombre y apellido">
+                <br>
+                <input class="nombre-usuario" type="text" name="nombreusuario" id="nombreusuario"
+                    placeholder="Nombre de usuario">
+                <br>
+                <input class="email" type="email" name="email" id="email" placeholder="E-mail">
+                <br>
+                <b><label class="titulo" for="fechaDeNacimiento"> Fecha de Nacimiento: </label></b>
+                <input class="date" type="date" name="fechaDeNacimiento" id="fechaDeNacimiento"
+                    placeholder="Fecha de nacimiento">
+                <br>
+                <input class="domicilio" type="text" name="domicilio" id="domicilio" placeholder="Domicilio">
+                <br>
+                <b><p class="titulo" for="perfilDeUsuario"> Perfil de usuario: </p></b>
+                <div class="radio texto-gral">
+                    <input type="radio" name="grupo" value="Comprador"> Comprador
+                    <input type="radio" name="grupo" value="Vendedor"> Vendedor
+                    <br>
+                </div>
+                <b><p class="titulo" for="intereses"> Intereses: </p></b>
+                <div class="checkbox texto-gral">
+                    <label  for="Electro"> </label>
+                    <input class="" type="checkbox" name="intereses" id="interesesElectro" value="Electro"> Electro
+                    <br>
+                    <label  for="Moda"> </label>
+                    <input type="checkbox" name="intereses" id="interesesModa" value="Moda"> Moda
+                    <br>
+                    <label  for="Hogar"> </label>
+                    <input type="checkbox" name="intereses" id="interesesHogar" value="Hogar"> Hogar
+                    <br>
+                    <label  for="Jugueteria"> </label>
+                    <input type="checkbox" name="intereses" id="interesesJugueteria" value="Jugueteria"> Jugueteria
+                    <br>
+                    <label  for="Vida Sana"> </label>
+                    <input type="checkbox" name="intereses" id="interesesVidaSana" value="Vida sana"> Vida sana
+                </div>
+            </form>
+        </header>
+    </main>
+</body>
+
+</html>
